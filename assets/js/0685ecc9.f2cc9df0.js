@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunknkn_java_website=self.webpackChunknkn_java_website||[]).push([[173],{8635:function(e){e.exports=JSON.parse('{"allTagsPath":"/nkn-java-website/blog/tags","slug":"/nkn-java-website/blog/tags/hello","name":"hello","count":2,"permalink":"/nkn-java-website/blog/tags/hello"}')}}]);

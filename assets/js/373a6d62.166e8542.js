@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunknkn_java_website=self.webpackChunknkn_java_website||[]).push([[158],{884:function(a){a.exports=JSON.parse('{"allTagsPath":"/nkn-java-website/blog/tags","slug":"/nkn-java-website/blog/tags/docusaurus","name":"docusaurus","count":4,"permalink":"/nkn-java-website/blog/tags/docusaurus"}')}}]);
