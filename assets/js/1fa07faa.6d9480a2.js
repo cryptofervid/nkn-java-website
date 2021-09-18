@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunknkn_java_website=self.webpackChunknkn_java_website||[]).push([[805],{3010:function(e){e.exports=JSON.parse('{"permalink":"/nkn-java-website/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"previousPage":null,"nextPage":null,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
