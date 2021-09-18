@@ -1,50 +1,69 @@
 import React from 'react';
 import clsx from 'clsx';
 import styles from './HomepageFeatures.module.css';
+import Link from '@docusaurus/Link';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('../../static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Environment Setup',
+    Svg: require('../../static/img/icon_installer.jpg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Configure the development environment and tighten your seatbelt.
       </>
     ),
+    linkTitle: (
+      <>
+        Setup Instructions
+      </>
+    ),
+    linkDestination: '/docs/prerequisites',    
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('../../static/img/undraw_docusaurus_tree.svg').default,
+    title: 'API Reference',
+    Svg: require('../../static/img/api_icon.jpg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Refer to the documentation for deeper exploration of features.
       </>
     ),
+    linkTitle: (
+      <>
+        Reference Docs
+      </>
+    ),
+    linkDestination: '/docs/prerequisites',         
   },
   {
-    title: 'Powered by React',
-    Svg: require('../../static/img/undraw_docusaurus_react.svg').default,
+    title: 'Working Examples',
+    Svg: require('../../static/img/icon_learning.jpg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Nitro boost your journey with these pre-built examples.
       </>
     ),
+    linkTitle: (
+      <>
+        Examples
+      </>
+    ),    
+    linkDestination: '/docs/prerequisites',
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({Svg, title, description, linkTitle, linkDestination}) {
   return (
-    <div className={clsx('col col--4')}>
+    <div className={clsx('col col--4 card')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} alt={title} />
+        <img src={Svg} className={styles.featureSvg} alt={title} />
       </div>
-      <div className="text--center padding-horiz--md">
+      <div className="container text--center padding-horiz--md">
         <h3>{title}</h3>
         <p>{description}</p>
       </div>
+      <Link className="button button-homepagefeatures button--primary button--lg" to={linkDestination}>
+        {linkTitle}
+      </Link>      
     </div>
   );
 }
@@ -53,6 +72,7 @@ export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
       <div className="container">
+        <h1>Choose your path for getting started with NKN Java SDK</h1>
         <div className="row">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
