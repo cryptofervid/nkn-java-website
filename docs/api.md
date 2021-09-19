@@ -2,34 +2,16 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# APIs
 
-Let's discover **Docusaurus in less than 5 minutes**.
+NKN Java SDK exposes the following APIs:
 
-## Getting Started
+## Messages API
 
-Get started by **creating a new site**.
+## Wallet API
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+This API provides methods to conviniently interact with the NKN Wallet. Refer to the [Wallet API documentation](wallet) for further details.
 
-## Generate a new site
+## Explorer API
 
-Generate a new Docusaurus site using the **classic template**:
-
-```shell
-npx @docusaurus/init@latest init my-website classic
-```
-
-## Start your site
-
-Run the development server:
-
-```shell
-cd my-website
-
-npx docusaurus start
-```
-
-Your site starts at `http://localhost:3000`.
-
-Open `docs/intro.md` and edit some lines: the site **reloads automatically** and display your changes.
+## Connection API

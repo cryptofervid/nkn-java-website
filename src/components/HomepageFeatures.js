@@ -32,7 +32,7 @@ const FeatureList = [
         Reference Docs
       </>
     ),
-    linkDestination: '/docs/prerequisites',         
+    linkDestination: '/docs/api',         
   },
   {
     title: 'Working Examples',
