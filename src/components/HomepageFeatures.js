@@ -47,7 +47,7 @@ const FeatureList = [
         Examples
       </>
     ),    
-    linkDestination: '/docs/prerequisites',
+    linkDestination: '/docs/wallet_example',
   },
 ];
 
