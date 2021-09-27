@@ -193,31 +193,3 @@ Stop sending automatic ack messages. An Ack message does not have any data. It i
 client.simpleMessagesProtocol().setNoAutomaticACKs(true);
 ```
 
-### Set Encryption Level
-
-The encryption level is not set at the message protocol level, but it is set at the client level. The following options are supported:
-
-*   DO_NOT_ENCRYPT
-*   ENCRYPT_ONLY_UNICAST
-*   CONVERT_MULTICAST_TO_UNICAST_AND_ENCRYPT
-*   ENCRYPT_UNICAST_AND_MULTICAST
-
-```java
-client.setEncryptionLevel(NKNClient.EncryptionLevel.DO_NOT_ENCRYPT);
-```
-
-:::caution
-Multicast encryption is not implemented yet. If you set encryption to ENCRYPT_UNICAST_AND_MULTICAST and attempt to send a multicast message, an exception will be thrown
-:::
-
-### Set Peer Encryption Requirement
-
-While receiving the messages, appropriate behaviour can be set at the client level to determine what needs to be done to unencrypted messages received. This option is set on the client instance. The following options are supported:
-
-* ON_NON_ENCRYPTED_MESSAGE___ALLOW_NONE_DROP_ALL
-* ON_NON_ENCRYPTED_MESSAGE___ALLOW_ACK_DROP_OTHER
-* ON_NON_ENCRYPTED_MESSAGE___ALLOW_ALL_DROP_NONE
-
-```java
-client.setPeerEncryptionRequirement(NKNClient.PeerEncryptionRequirement.ON_NON_ENCRYPTED_MESSAGE___ALLOW_NONE_DROP_ALL)
-```

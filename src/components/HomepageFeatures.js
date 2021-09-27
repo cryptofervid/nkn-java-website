@@ -32,7 +32,7 @@ const FeatureList = [
         Reference Docs
       </>
     ),
-    linkDestination: '/docs/session',         
+    linkDestination: '/docs/client',         
   },
   {
     title: 'Working Examples',
@@ -53,17 +53,19 @@ const FeatureList = [
 
 function Feature({Svg, title, description, linkTitle, linkDestination}) {
   return (
-    <div className={clsx('col col--4 card')}>
-      <div className="text--center">
-        <img src={Svg} className={styles.featureSvg} alt={title} />
-      </div>
-      <div className="container text--center padding-horiz--md">
-        <h3>{title}</h3>
-        <p>{description}</p>
-      </div>
-      <Link className="button button-homepagefeatures button--primary button--lg" to={linkDestination}>
-        {linkTitle}
-      </Link>      
+    <div className={clsx('col col--4')}>
+      <div className="card">
+        <div className="text--center">
+          <img src={Svg} className={styles.featureSvg} alt={title} />
+        </div>
+        <div className="container text--center padding-horiz--md">
+          <h3>{title}</h3>
+          <p>{description}</p>
+        </div>
+        <Link className="button button-homepagefeatures button--primary button--lg text--center" to={linkDestination}>
+          {linkTitle}
+        </Link>
+      </div>      
     </div>
   );
 }
